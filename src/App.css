@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  box-sizing: border-box;
   display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   flex-direction: column;
+  color: white;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  padding: 25px;
+}
+.headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.name {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.tagline {
+  color: beige;
+}
+.mr {
+  margin-right: 10px;
+}
+.logo {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.text-input {
+  background-color: white;
+  outline: none;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 100%;
+  padding-left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+.row-alignment {
+  display: flex;
+  width: 100%;
+}
+.send-button {
+  margin-left: 30px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  border-radius: 15px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid white;
+}
+.messages-container {
+  width: 100%;
+  overflow-y: scroll;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.messages-container::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.messages-container::-webkit-scrollbar-track {
+  background: black; /* Track color */
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color */
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
 }
